@@ -1,0 +1,22 @@
+# MATLAB backup and autosave files
+*.asv
+*.autosave
+*.bak
+
+# Simulink models
+*.slxc
+*.slx
+*.mdl
+
+# MATLAB figures
+*.fig
+
+# Workspace and cache files
+*.mat
+*.mex*
+*.mlappinstall
+*.mlpkginstall
+
+# Hidden system files
+.DS_Store
+Thumbs.db
