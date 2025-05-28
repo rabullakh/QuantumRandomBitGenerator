@@ -1,0 +1,21 @@
+% Quantum Random Bit Generator Simulation
+% Author: Jibril Abdullahi
+% Initialize qubit in equal superposition state |ψ⟩ = (1/√2)(|0⟩ + |1⟩)
+qubit = [1; 1] / sqrt(2);
+% Number of bits to generate
+n_bits = 10;
+% Preallocate array for random bits
+quantum_random_bits = zeros(1, n_bits);
+% Generate random bits based on measurement probabilities
+for i = 1:n_bits
+    probability = abs(qubit).^2; % Measurement probabilities
+    quantum_random_bits(i) = randsample([0, 1], 1, true, probability);
+end
+% Display generated random bits
+disp('Quantum Random Bit Sequence:');
+disp(quantum_random_bits);
+% Visualize distribution with histogram
+histogram(quantum_random_bits, 'BinMethod', 'integers');
+title('Quantum Random Bit Distribution');
+xlabel('Bit Value');
+ylabel('Frequency');
