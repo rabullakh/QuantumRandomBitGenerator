@@ -18,7 +18,7 @@ This project simulates a quantum random bit generator using MATLAB. It models a 
 
 ## Output Example
 ```
-0 1 1 0 1 0 0 1 1 1
+0 1 1 0 0 0 0 1
 ```
 
 ## License
